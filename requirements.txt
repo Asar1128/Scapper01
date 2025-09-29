@@ -1,0 +1,6 @@
+scrapy>=2.13.0
+itemadapter
+# Optional extras:
+# scrapy-playwright==0.5.0   # enable if you need JS rendering (also install playwright)
+# playwright                    # if using scrapy-playwright
+# scrapy-useragents             # for a larger UA pool

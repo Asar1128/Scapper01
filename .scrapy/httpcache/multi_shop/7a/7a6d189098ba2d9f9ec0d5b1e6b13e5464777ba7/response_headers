@@ -1,0 +1,36 @@
+Date: Sat, 20 Sep 2025 17:59:04 GMT
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 230
+X-Sorting-Hat-Shopid: 68744282343
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: localization=PK; path=/; expires=Sun, 20 Sep 2026 17:59:04 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=12c1c62a-a90a-487f-b512-06d9b1d50f28; domain=opiabylogo.com; path=/; expires=Sun, 20 Sep 2026 23:59:04 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=1072be72-b9bd-4f29-abd1-292dbaae0f9f; domain=opiabylogo.com; path=/; expires=Sat, 20 Sep 2025 18:29:04 GMT; SameSite=Lax
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin, <//opiabylogo.com/cdn/shop/t/4/assets/theme.css?v=179548260072873546531730720257>; as="style"; rel="preload"
+Etag: W/"cacheable:f76265b676bbecd8c5a405b60378b17a"
+Shopify-Complexity-Score: 1570
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 68744282343
+X-Shardid: 230
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Powered-By: Shopify
+Server-Timing: processing;dur=161;desc="gc:4", db;dur=39, db_async;dur=1.448, render;dur=71, asn;desc="135407", edge;desc="KHI", country;desc="PK", theme;desc="143819407591", pageType;desc="product", servedBy;desc="kb8b", requestID;desc="cd2cb8f6-7779-4dd4-94b8-f1f47ddca297-1758391144", _y;desc="12c1c62a-a90a-487f-b512-06d9b1d50f28", _s;desc="1072be72-b9bd-4f29-abd1-292dbaae0f9f", _cmp;desc="3.AMPS_PKIS_f_f_D00TunIXSSGV7UJ3T0haAg"
+Server-Timing: cfRequestDuration;dur=351.000071
+X-Dc: gcp-europe-west4,gcp-europe-west1,gcp-europe-west1
+X-Request-Id: cd2cb8f6-7779-4dd4-94b8-f1f47ddca297-1758391144
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PnIGPUKSmBI2cohQ0YeGA5F3NmFI7ZUj0hjb4X%2FcZstut%2FI584yRVfMpmIGr%2F2a0bT%2FNHLNXWYloILPxBalZfk0Oonw1477gvEY7DMbEXQoaPr0%2FwNLFDG4Z5evawxrU"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 982336edc8c19095-KHI

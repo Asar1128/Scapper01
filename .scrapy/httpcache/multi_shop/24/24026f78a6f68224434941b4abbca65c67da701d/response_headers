@@ -1,0 +1,33 @@
+Content-Length: 0
+Date: Sat, 20 Sep 2025 17:58:45 GMT
+Content-Type: application/json; charset=utf-8
+Cf-Ray: 98233676794f9095-KHI
+X-Sorting-Hat-Podid: 230
+X-Sorting-Hat-Shopid: 68744282343
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: _shopify_y=12c1c62a-a90a-487f-b512-06d9b1d50f28; domain=opiabylogo.com; path=/; expires=Sun, 20 Sep 2026 23:58:45 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=1072be72-b9bd-4f29-abd1-292dbaae0f9f; domain=opiabylogo.com; path=/; expires=Sat, 20 Sep 2025 18:28:45 GMT; SameSite=Lax
+Etag: "cacheable:8198ad313d139e170a423269f97e669a"
+Shopify-Complexity-Score: 360
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 68744282343
+X-Shardid: 230
+Vary: Accept
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Cache-Control: private, no-store
+Powered-By: Shopify
+Server-Timing: processing;dur=20, db;dur=5, db_async;dur=1.434, asn;desc="135407", edge;desc="KHI", country;desc="PK", servedBy;desc="r6wh", requestID;desc="dda8824e-1884-414e-a738-dd5df4cb5f67-1758391125", _y;desc="12c1c62a-a90a-487f-b512-06d9b1d50f28", _s;desc="1072be72-b9bd-4f29-abd1-292dbaae0f9f", _cmp;desc="3.AMPS_PKIS_f_f_D00TunIXSSGV7UJ3T0haAg"
+Server-Timing: cfRequestDuration;dur=184.000254
+X-Dc: gcp-europe-west4,gcp-europe-west1,gcp-europe-west1
+X-Request-Id: dda8824e-1884-414e-a738-dd5df4cb5f67-1758391125
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=YS44tBGfNT6Ms7jyTZpqVQDVxMN4HW2XcqTq312SF9%2Bcv0WcXv3KMHn1uRLuopeltju1FCOwuxbKPGZ%2FvCGSsUkr0o1irI0Tn6wyxVOugzv3mLXsIFCiA9eD4%2FBuER6w"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare

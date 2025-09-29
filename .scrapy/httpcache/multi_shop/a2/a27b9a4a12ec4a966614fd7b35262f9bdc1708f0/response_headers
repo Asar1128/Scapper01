@@ -1,0 +1,35 @@
+Date: Tue, 23 Sep 2025 15:35:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 378
+X-Sorting-Hat-Shopid: 34850078764
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: cart_currency=GBP; path=/; expires=Tue, 07 Oct 2025 15:35:18 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=30849d48-e5de-4488-9907-10156cf1a55e; domain=clae-uk.eu; path=/; expires=Wed, 23 Sep 2026 21:35:18 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=534c082a-6198-41d5-8707-a71b555d14e4; domain=clae-uk.eu; path=/; expires=Tue, 23 Sep 2025 16:05:18 GMT; SameSite=Lax
+Etag: W/"cacheable:89be3634e099a69ad09393303926689e"
+Shopify-Complexity-Score: 2580
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 34850078764
+X-Shardid: 378
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-GB
+Powered-By: Shopify
+Server-Timing: processing;dur=310;desc="gc:13", db;dur=156, db_async;dur=127.7, asn;desc="17557", edge;desc="SIN", country;desc="PK", servedBy;desc="g5n9", requestID;desc="32922055-b22c-45a0-a2c5-dcf681d8dac1-1758641718", _y;desc="30849d48-e5de-4488-9907-10156cf1a55e", _s;desc="534c082a-6198-41d5-8707-a71b555d14e4", _cmp;desc="3.AMPS_PKIS_f_f_los5gWvjRp6XYbkXTlpcNg"
+Server-Timing: cfRequestDuration;dur=507.999897
+X-Dc: gcp-asia-southeast1,gcp-europe-west4,gcp-europe-west4
+X-Request-Id: 32922055-b22c-45a0-a2c5-dcf681d8dac1-1758641718
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=CLzuMALNjRh6a5GLFNS4UdgqQoETP%2BLvw1X%2FhRCZdC%2BG30%2B%2F5DIxXjg%2FxB4VNtTaEpHsL%2FMXWZkkke1Tqyzx7oIK52%2FgBw6GJ397xLBPBBmyBSwzx1nthvC3xWE%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 983b1c71cca69ba3-SIN

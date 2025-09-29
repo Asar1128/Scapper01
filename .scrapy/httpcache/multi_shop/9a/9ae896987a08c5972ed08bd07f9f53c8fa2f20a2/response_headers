@@ -1,0 +1,34 @@
+Content-Length: 0
+Date: Sun, 21 Sep 2025 13:17:59 GMT
+Content-Type: application/json; charset=utf-8
+Cf-Ray: 9829d8902937c972-KHI
+X-Sorting-Hat-Podid: 378
+X-Sorting-Hat-Shopid: 34850078764
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: cart_currency=GBP; path=/; expires=Sun, 05 Oct 2025 13:17:59 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=30849d48-e5de-4488-9907-10156cf1a55e; domain=clae-uk.eu; path=/; expires=Mon, 21 Sep 2026 19:17:59 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=2c532448-68eb-4fd4-b9ff-783b86804acf; domain=clae-uk.eu; path=/; expires=Sun, 21 Sep 2025 13:47:59 GMT; SameSite=Lax
+Etag: "cacheable:93a8833ffd36d9ba2a2b52a6278645a5"
+Shopify-Complexity-Score: 380
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 34850078764
+X-Shardid: 378
+Vary: Accept
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-GB
+Cache-Control: private, no-store
+Powered-By: Shopify
+Server-Timing: processing;dur=21;desc="gc:2", db;dur=4, db_async;dur=1.337, asn;desc="135407", edge;desc="KHI", country;desc="PK", servedBy;desc="sxrk", requestID;desc="ca1a4a39-aafb-45b7-b899-cee3189988d8-1758460679", _y;desc="30849d48-e5de-4488-9907-10156cf1a55e", _s;desc="2c532448-68eb-4fd4-b9ff-783b86804acf", _cmp;desc="3.AMPS_PKIS_f_f_los5gWvjRp6XYbkXTlpcNg"
+Server-Timing: cfRequestDuration;dur=194.000006
+X-Dc: gcp-europe-west4,gcp-europe-west4,gcp-europe-west4
+X-Request-Id: ca1a4a39-aafb-45b7-b899-cee3189988d8-1758460679
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qg4VhCaE1Rnsi3gWQqF%2BndX4p5iHQFmGqkTvczumPI53ketkiUD1XVOrfQ5j3NJvNoUN8wEO2qmo%2BNwu7wpIMUyXQZmuPM1dWM%2BgsLrDqWnHAmeFeeyxVgKI8hU%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare

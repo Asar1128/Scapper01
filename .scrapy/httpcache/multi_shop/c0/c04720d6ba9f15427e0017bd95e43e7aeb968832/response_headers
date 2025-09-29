@@ -1,0 +1,39 @@
+Date: Sat, 20 Sep 2025 07:50:29 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 59
+X-Sorting-Hat-Shopid: 9720758332
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: localization=PK; path=/; expires=Sun, 20 Sep 2026 07:50:29 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=388bdb31-840d-4001-99d3-5ecbf2783a58; domain=logoofficial.com; path=/; expires=Sun, 20 Sep 2026 13:50:29 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=3ee5316b-056e-49ce-8ad2-fae4294090e9; domain=logoofficial.com; path=/; expires=Sat, 20 Sep 2025 08:20:29 GMT; SameSite=Lax
+Set-Cookie: _tracking_consent=3.AMPS_PKIS_f_f_NP7hADgoQUOCr4Uw1C3BdQ; domain=logoofficial.com; path=/; expires=Sun, 20 Sep 2026 13:50:29 GMT; SameSite=Lax
+Set-Cookie: _orig_referrer=; domain=logoofficial.com; path=/; expires=Sat, 04 Oct 2025 07:50:29 GMT; HttpOnly; SameSite=Lax
+Set-Cookie: _landing_page=%2Frobots.txt; domain=logoofficial.com; path=/; expires=Sat, 04 Oct 2025 07:50:29 GMT; HttpOnly; SameSite=Lax
+Set-Cookie: _shopify_essential=:AZlmGmOAAAEAsNKyOd3A41sXnKYQ8KWBQrtmXQwMdvYVfgvI5_Nufp8eYUtNLB0URYo7SYc6NXAew3jory80cfS5uzHR20e1ZD2xje5J6A-B0pd6HsQwhnbyKScQEkPpKIXTz1SukK2UadzqxMWHkxju_oA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin
+Etag: W/"cacheable:9648735b1f9742301877d776b2fa4f68"
+Shopify-Complexity-Score: 410
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 9720758332
+X-Shardid: 59
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Powered-By: Shopify
+Server-Timing: processing;dur=44;desc="gc:3", db;dur=10, db_async;dur=1.645, parse;dur=1, asn;desc="135407", edge;desc="KHI", country;desc="PK", theme;desc="132232773692", pageType;desc="robots", servedBy;desc="vst2", requestID;desc="f9cd9462-4911-46ac-82bb-da4703f0f111-1758354629", _y;desc="388bdb31-840d-4001-99d3-5ecbf2783a58", _s;desc="3ee5316b-056e-49ce-8ad2-fae4294090e9", _cmp;desc="3.AMPS_PKIS_f_f_NP7hADgoQUOCr4Uw1C3BdQ"
+Server-Timing: cfRequestDuration;dur=230.999947
+X-Dc: gcp-europe-west4,gcp-europe-west1,gcp-europe-west1
+X-Request-Id: f9cd9462-4911-46ac-82bb-da4703f0f111-1758354629
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kPhPJmvti1nE3fbdKU369UUun32EwxFa3T2N0VVROO2YTbpVRjIEsR9W1nl%2BcLG90dzp4wwTNrNm%2FfaHUkE6u%2BM0c08%2B2Ora19gj0rwtzS1qKzBEaORHoevYZdsHwrkJixo9FzbX"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 981fbb71be4a9083-KHI

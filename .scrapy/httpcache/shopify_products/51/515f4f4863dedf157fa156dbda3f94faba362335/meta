@@ -1,0 +1,1 @@
+{'url': 'https://jewelry-demo.myshopify.com/products.json?limit=250', 'method': 'GET', 'status': 401, 'response_url': 'https://jewelry-demo.myshopify.com/products.json?limit=250', 'timestamp': 1758354712.2686913}

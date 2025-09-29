@@ -1,0 +1,37 @@
+Date: Sat, 20 Sep 2025 17:58:46 GMT
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 230
+X-Sorting-Hat-Shopid: 68744282343
+X-Storefront-Renderer-Rendered: 1
+Etag: W/"cacheable:5758457d9de0d4885e436955b9ac1a73"
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin, <//opiabylogo.com/cdn/shop/t/4/assets/theme.css?v=179548260072873546531730720257>; as="style"; rel="preload"
+Speculation-Rules: "/cdn/shopifycloud/storefront/assets/storefront/storefronts.specrules-dd5621a1.json"
+Set-Cookie: localization=PK; path=/; expires=Sun, 20 Sep 2026 17:58:46 GMT
+Set-Cookie: _shopify_y=12c1c62a-a90a-487f-b512-06d9b1d50f28; domain=opiabylogo.com; path=/; expires=Sun, 20 Sep 2026 23:58:46 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=1072be72-b9bd-4f29-abd1-292dbaae0f9f; domain=opiabylogo.com; path=/; expires=Sat, 20 Sep 2025 18:28:46 GMT; SameSite=Lax
+Set-Cookie: _shopify_essential=:AZloR0QkAAEA_fiU5q-2UjqjBTZcxkB3ujAC0yUPVOPxKfikT7Q4RO8S-k7aAiqtHjS-iKgD92pgpQiX1770WFldktSuoz3E2dOxBKaCRSiZiSNVU5V95CIm4o-DdsG5pcqgE5_ZmJ4YDdowEeOynX67Tc7RAJ9qM6P9thmm4gKAd3Q:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+Shopify-Complexity-Score: 270
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 68744282343
+X-Shardid: 230
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Powered-By: Shopify
+Server-Timing: processing;dur=32;desc="gc:1", db;dur=9, db_async;dur=1.327, asn;desc="135407", edge;desc="KHI", country;desc="PK", theme;desc="143819407591", pageType;desc="collection", servedBy;desc="7xtz", requestID;desc="2a7ba4c2-8ba4-40e0-ba50-f9b0e9f215fe-1758391126", _y;desc="12c1c62a-a90a-487f-b512-06d9b1d50f28", _s;desc="1072be72-b9bd-4f29-abd1-292dbaae0f9f", _cmp;desc="3.AMPS_PKIS_f_f_D00TunIXSSGV7UJ3T0haAg"
+Server-Timing: cfRequestDuration;dur=204.000235
+X-Dc: gcp-europe-west4,gcp-europe-west1,gcp-europe-west1
+X-Request-Id: 2a7ba4c2-8ba4-40e0-ba50-f9b0e9f215fe-1758391126
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bArMeJPxP9%2Fq5OG8NGJ%2B2txeXKxnG%2Fom1NZXwLir%2BEKWfasUR59ynPP8EWvRbzOnMMhnzylzVLypurfOmo2N9r7LXjcWnV1njkrxyD7N7ytZzb2%2Ff8xW1PUPo1Tp0MJx"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 9823367b2f899095-KHI

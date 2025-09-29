@@ -1,0 +1,37 @@
+Date: Sat, 20 Sep 2025 07:56:54 GMT
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 165
+X-Sorting-Hat-Shopid: 55664672934
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: localization=PK; path=/; expires=Sun, 20 Sep 2026 07:56:54 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=ea521878-9e62-4c27-a8e3-9f5ee8c2b568; domain=lacedup.pk; path=/; expires=Sun, 20 Sep 2026 13:56:54 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=4d926bf9-5ad7-4984-b4c7-30c0ae8dda97; domain=lacedup.pk; path=/; expires=Sat, 20 Sep 2025 08:26:54 GMT; SameSite=Lax
+Set-Cookie: _shopify_essential=:AZlmGmOEAAEAQz3wg9zhpxrapot5to0LhQXCWCLgJ1ggUsGjtD83YUL9Q12AVFssySTfNgvcowrjHa7xBHm2TgoM75cygkx6lvdtRd1Mkk4Ll0Svz_RnQI4DK2J5bHubGiDeF7WOftweZCqa0TeQwXTbdomIuUKa0jQeoKpeX_9NMjk:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin
+Etag: W/"cacheable:675cdd6a7b236195b8aa172903d22d95"
+Shopify-Complexity-Score: 1450
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 55664672934
+X-Shardid: 165
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Powered-By: Shopify
+Server-Timing: processing;dur=151;desc="gc:12", db;dur=47, db_async;dur=1.693, render;dur=61, asn;desc="135407", edge;desc="KHI", country;desc="PK", theme;desc="121500762278", pageType;desc="list-collections", servedBy;desc="bkq7", requestID;desc="5116b656-f239-41ab-b3bc-f6cdd6eafdd0-1758355013", _y;desc="ea521878-9e62-4c27-a8e3-9f5ee8c2b568", _s;desc="4d926bf9-5ad7-4984-b4c7-30c0ae8dda97", _cmp;desc="3.AMPS_PKIS_f_f_sDlfVUyMSbyqwZtwwhafgw"
+Server-Timing: cfRequestDuration;dur=321.999788
+X-Dc: gcp-europe-west4,gcp-europe-west1,gcp-europe-west1
+X-Request-Id: 5116b656-f239-41ab-b3bc-f6cdd6eafdd0-1758355013
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PVEaGbZI%2FNN4s%2FwgMnYLvanJU1wOT16j4FC%2FhfIRYWjeIHKv6hbT6AIP5IbTot%2FSz6picdSP7Vd0fFL5j0vFgwPCHWNZYQy4t1h9idbDeL7%2FDe2IcfiQBPK2WIo%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 981fc4d459bf9081-KHI

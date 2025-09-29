@@ -1,0 +1,37 @@
+Date: Tue, 23 Sep 2025 14:52:15 GMT
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 59
+X-Sorting-Hat-Shopid: 9720758332
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: localization=PK; path=/; expires=Wed, 23 Sep 2026 14:52:15 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=388bdb31-840d-4001-99d3-5ecbf2783a58; domain=logoofficial.com; path=/; expires=Wed, 23 Sep 2026 20:52:15 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=ac3529ea-0e90-4311-a9f6-a18ded86c9b7; domain=logoofficial.com; path=/; expires=Tue, 23 Sep 2025 15:22:15 GMT; SameSite=Lax
+Set-Cookie: _shopify_essential=:AZlmGmOAAAEAx3bswLggz09Hj0mwONveoaqrMPQ-wJN9osaibR6UuPIiX6heDzBj5wbu9HPgf0PdL8TdMeaF99hEJphrDqXAXfe0-kY6bt7uCTqP8IcNf_PPLDOKa5eGcKi75fN1lPmqD8AZ_p0XcV7QPVkwRPcARpB7sH4OyshL1op0ih1ULA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin, <//www.logoofficial.com/cdn/shop/t/50/assets/theme.css?v=39785061340073286151738420292>; as="style"; rel="preload"
+Speculation-Rules: "/cdn/shopifycloud/storefront/assets/storefront/storefronts.specrules-dd5621a1.json"
+Etag: W/"cacheable:cb07dea73f3bb410fa0edf6e08a1806b"
+Shopify-Complexity-Score: 4890
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 9720758332
+X-Shardid: 59
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Powered-By: Shopify
+Server-Timing: processing;dur=497;desc="gc:39", db;dur=94, db_async;dur=9.321, fetch;dur=52, render;dur=231, asn;desc="17557", edge;desc="SIN", country;desc="PK", theme;desc="132232773692", pageType;desc="collection", servedBy;desc="fkbn", requestID;desc="c2a2773f-eb7c-4697-bbb8-d0e24d3bc39b-1758639134", _y;desc="388bdb31-840d-4001-99d3-5ecbf2783a58", _s;desc="ac3529ea-0e90-4311-a9f6-a18ded86c9b7", _cmp;desc="3.AMPS_PKIS_f_f_NP7hADgoQUOCr4Uw1C3BdQ"
+Server-Timing: cfRequestDuration;dur=532.000065
+X-Dc: gcp-asia-southeast1,gcp-asia-southeast1,gcp-asia-southeast1
+X-Request-Id: c2a2773f-eb7c-4697-bbb8-d0e24d3bc39b-1758639134
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=rCOk%2BW8Dc2ibmb5%2FAz9RLM3ZvF4ASZuv6lbgyyC1Mv8vBf2lrgb8Qkl5J%2FTSQ8wGTMAjKfKJXzzGnHB3Wcvqg9gLRJG7HkBMkVD16sm6YJUzKAVSen2TrDJfMPX0VbdKlw1aamSO"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 983add60df7dfb86-SIN

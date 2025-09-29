@@ -1,0 +1,37 @@
+Date: Sun, 21 Sep 2025 13:20:32 GMT
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 378
+X-Sorting-Hat-Shopid: 34850078764
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: localization=GB; path=/; expires=Mon, 21 Sep 2026 13:20:32 GMT; SameSite=Lax
+Set-Cookie: cart_currency=GBP; path=/; expires=Sun, 05 Oct 2025 13:20:32 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=30849d48-e5de-4488-9907-10156cf1a55e; domain=clae-uk.eu; path=/; expires=Mon, 21 Sep 2026 19:20:32 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=2c532448-68eb-4fd4-b9ff-783b86804acf; domain=clae-uk.eu; path=/; expires=Sun, 21 Sep 2025 13:50:32 GMT; SameSite=Lax
+Set-Cookie: _shopify_essential=:AZlsbJQiAAEAEQ9KnX9AcWVrUHiMZjqJlC9OJvM6RrVY7t71nNu9xAuJ02ZUWONJmApW61xTdkSHC9eelxdMNZDoTLeLlUOZZKG1-PD7YVZ19tD2ZsF0z3PzT6ScP2miR5QszDMptxqAzz1PS6VCnlFc-95MpGnUuQ5QH8S8EDuYl8Yu4fG-:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin, <//clae-uk.eu/cdn/shop/t/38/assets/theme.css?v=139571144105217160481754034751>; as="style"; rel="preload"
+Etag: W/"cacheable:f7352ac4e466d64592b81ac4e34ba166"
+Shopify-Complexity-Score: 6570
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 34850078764
+X-Shardid: 378
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-GB
+Powered-By: Shopify
+Server-Timing: processing;dur=666;desc="gc:31", db;dur=343, db_async;dur=30.676, parse;dur=22, render;dur=301, asn;desc="135407", edge;desc="KHI", country;desc="PK", theme;desc="179111756155", pageType;desc="index", servedBy;desc="vjhq", requestID;desc="956aa458-f302-4fdd-a3e8-9c958c8b61ac-1758460831", _y;desc="30849d48-e5de-4488-9907-10156cf1a55e", _s;desc="2c532448-68eb-4fd4-b9ff-783b86804acf", _cmp;desc="3.AMPS_PKIS_f_f_los5gWvjRp6XYbkXTlpcNg"
+Server-Timing: cfRequestDuration;dur=855.000019
+X-Dc: gcp-europe-west4,gcp-europe-west4,gcp-europe-west4
+X-Request-Id: 956aa458-f302-4fdd-a3e8-9c958c8b61ac-1758460831
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=IB6%2F8SzB2u9qpV6RaShnUeZkKeGldAyQmcVHk2nSLTudpcWebdvpyKCHKveZVgkkC2I3wbvNfc1mCIc%2BG%2F0ZXa0TVTVy0t6MxS2cL6d%2BHmwdRFtRp%2Fh2xvX2IHg%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 9829dc449ffc9081-KHI
