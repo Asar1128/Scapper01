@@ -61,6 +61,7 @@ class MultiShopSpider(scrapy.Spider):
         self.shop_stats = {}
         self.shop_currency = {}
         self._header_written = set()
+        self._header_yielded = set()
         self.issues_file = None
 
     @classmethod
@@ -147,6 +148,18 @@ class MultiShopSpider(scrapy.Spider):
         products = data.get('products') or []
         if not products:
             self.logger.info("No products returned from JSON for site: %s", shop)
+
+        # Ensure header item is yielded to the feed before products for this shop
+        if shop not in self._header_yielded:
+            header_item = {
+                "type": "currency_info",
+                "shop": shop,
+                "currency": self.shop_currency.get(shop),
+                "detected_at": _now_iso(),
+                "url": f"https://{shop}/collections/all",
+            }
+            yield header_item
+            self._header_yielded.add(shop)
 
         for prod in products:
 
