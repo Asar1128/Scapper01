@@ -1,3 +1,7 @@
+import os
+import sys
+
+
 # Minimal + practical settings for scraping responsibly
 BOT_NAME = "Hurtfelt"
 
@@ -56,3 +60,8 @@ LOG_LEVEL = 'INFO'
 # DOWNLOAD_HANDLERS = {"http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler", "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler"}
 # TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 # PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 30000
+
+
+if "SCRAPY_CLUSTER" in os.environ or "SHUB" in os.environ:
+    from scrapy.utils import ossignal
+    ossignal.install_shutdown_handlers = lambda *a, **kw: None
