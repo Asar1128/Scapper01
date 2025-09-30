@@ -196,6 +196,8 @@ class MultiShopSpider(scrapy.Spider):
                 }
 
                 self.write_shop_item(item_dict, shop)
+                # Also yield for Zyte/Feed exports
+                yield item_dict
 
         # pagination (since_id)
         if products:
@@ -249,6 +251,8 @@ class MultiShopSpider(scrapy.Spider):
                 self._header_written.add(shop)
             except Exception as e:
                 self.logger.error("Failed writing currency header for %s: %s", shop, e)
+            # Yield header as an item as well (works on Zyte/feeds)
+            yield header
     def spider_closed(self, spider):
         summary_path = "crawl_summary.txt"
         try:
