@@ -91,6 +91,7 @@ class MultiShopSpider(scrapy.Spider):
                 callback=self.parse_products_json,
                 meta={
                     'shop': shop,
+                    'handle_httpstatus_list': [200, 401, 403, 404],
                 },
                 dont_filter=True,
             )
@@ -185,19 +186,34 @@ class MultiShopSpider(scrapy.Spider):
                         first_image_src = img
                         break
                 image_url = urljoin(f"https://{shop}", first_image_src) if first_image_src else None
+                # Build product URL if handle available
+                product_url = None
+                handle = prod.get('handle')
+                if handle:
+                    product_url = f"https://{shop}/products/{handle}"
 
                 item_dict = {
                     'product_id': product_id,
                     'name': name,
                     'price': price,
                     'image_url': image_url,
+                    'url': product_url,
                     'isFullyOutOfStock': is_fully_out_of_stock,
                     'isVariantOutOfStock': is_variant_out_of_stock,
                 }
 
                 self.write_shop_item(item_dict, shop)
-                # Also yield for Zyte/Feed exports
-                yield item_dict
+                # Also yield for Zyte/Feed exports (use plain dict for flexibility)
+                yield {
+                    'shop': shop,
+                    'product_id': product_id,
+                    'name': name,
+                    'price': price,
+                    'image_url': image_url,
+                    'url': product_url,
+                    'isFullyOutOfStock': is_fully_out_of_stock,
+                    'isVariantOutOfStock': is_variant_out_of_stock,
+                }
 
         # pagination (since_id)
         if products:
@@ -207,7 +223,7 @@ class MultiShopSpider(scrapy.Spider):
                 yield scrapy.Request(
                     next_url,
                     callback=self.parse_products_json,
-                    meta={'shop': shop},
+                    meta={'shop': shop, 'handle_httpstatus_list': [200, 401, 403, 404]},
                     dont_filter=True,
                 )
 
