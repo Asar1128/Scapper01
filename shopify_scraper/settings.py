@@ -1,5 +1,3 @@
-import os
-import sys
 
 
 # Minimal + practical settings for scraping responsibly
@@ -62,6 +60,3 @@ LOG_LEVEL = 'INFO'
 # PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 30000
 
 
-if "SCRAPY_CLUSTER" in os.environ or "SHUB" in os.environ:
-    from scrapy.utils import ossignal
-    ossignal.install_shutdown_handlers = lambda *a, **kw: None
