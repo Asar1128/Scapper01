@@ -1,2 +1,2 @@
 crawl summary per shop
-www.logoofficial.com/collections/logoall: items=80, saved=80, failed=1
+www.logoofficial.com: items=1716, saved=1716, failed=0, pages_crawled=10

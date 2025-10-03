@@ -1,0 +1,33 @@
+Date: Wed, 01 Oct 2025 20:03:45 GMT
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+X-Sorting-Hat-Podid: 190
+X-Sorting-Hat-Shopid: 22907887
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: _shopify_y=52f3969c-6460-4f85-a40f-4a026bf96df7; domain=outfitters.com.pk; path=/; expires=Fri, 02 Oct 2026 02:03:45 GMT; SameSite=Lax
+Set-Cookie: _shopify_s=30f9925e-bfe2-40b1-9311-1c6953ee99ff; domain=outfitters.com.pk; path=/; expires=Wed, 01 Oct 2025 20:33:45 GMT; SameSite=Lax
+Etag: W/"cacheable:13757f7a5a13984fe4faf704ed5f9c45"
+Shopify-Complexity-Score: 310
+Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests;
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=7889238
+X-Shopid: 22907887
+X-Shardid: 190
+Vary: Accept
+Vary: accept-encoding
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en-PK
+Powered-By: Shopify
+Server-Timing: processing;dur=34;desc="gc:1", db;dur=16, db_async;dur=1.272, asn;desc="17557", edge;desc="SIN", country;desc="PK", servedBy;desc="r7cn", requestID;desc="93d30c3e-2eab-4871-965e-f68bbec177d2-1759349025", _y;desc="52f3969c-6460-4f85-a40f-4a026bf96df7", _s;desc="30f9925e-bfe2-40b1-9311-1c6953ee99ff", _cmp;desc="3.AMPS_PKIS_f_f_j4I-XwMOT1SAGiJsxCyn-A"
+Server-Timing: cfRequestDuration;dur=62.999964
+X-Dc: gcp-asia-southeast1,gcp-asia-southeast1,gcp-asia-southeast1
+X-Request-Id: 93d30c3e-2eab-4871-965e-f68bbec177d2-1759349025
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=5vfpuBby%2FT7EDyy%2By7ueB3syL88s%2F7FX2ueSLgKC0kAwIi%2BKit3kx0G8p%2BV0kfbyQ13%2F%2BgiMPYKWDudkVdKQCjfVcG5ovFVKYWleDYEAK7OJEb4jCu1bYVaPuddHXR7CxJeH"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 987e90afbf08fdcc-SIN
