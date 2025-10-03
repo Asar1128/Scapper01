@@ -1,0 +1,2 @@
+crawl summary per shop
+www.allbirds.com: items=708, saved=708, failed=0, pages_crawled=6

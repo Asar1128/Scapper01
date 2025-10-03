@@ -79,17 +79,30 @@ class MultiShopSpider(scrapy.Spider):
             self.consecutive_empty_pages[shop] = 0
             self.shop_pagination_strategies[shop] = "standard"  # standard, offset, or collection_pagination
 
-            # Prefetch currency
+            # First fetch currency page, then chain to products
             yield scrapy.Request(
                 f"https://{shop}/collections/all",
-                callback=self.parse_currency_page,
+                callback=self.parse_currency_and_then_products,
                 meta={'shop': shop},
                 dont_filter=True,
                 priority=10,
             )
 
-            # Start with standard pagination
-            yield self._build_initial_request(shop)
+    def parse_currency_and_then_products(self, response):
+        shop = response.meta.get('shop')
+        code = self._extract_currency_from_page_source_json(response)
+        if code:
+            self.shop_currency[shop] = code
+            # Yield currency first in Zyte dataset
+            yield {
+                "type": "currency_info",
+                "shop": shop,
+                "currency": code,
+                "detected_at": _now_iso(),
+            }
+
+        # Now continue to products crawl
+        yield self._build_initial_request(shop)
 
     def _build_initial_request(self, shop, strategy="standard", page=1, offset=0):
         """Build initial request based on strategy"""
@@ -161,11 +174,8 @@ class MultiShopSpider(scrapy.Spider):
             
         self.shop_stats[shop]['pages_crawled'] += 1
 
-        # Handle non-200 responses
         if response.status != 200:
             self.logger.warning(f"Got status {response.status} for {response.url}")
-            
-            # Try different strategy if current one fails
             if response.status in [404, 406]:
                 self.logger.info(f"Trying alternative pagination strategy for {shop}")
                 yield from self._try_alternative_strategy(shop, strategy, page, offset)
@@ -173,18 +183,13 @@ class MultiShopSpider(scrapy.Spider):
             return
 
         try:
-            # Try to parse as JSON first
             data = json.loads(response.text)
             products = data.get('products') or []
-            
-            # If no products in JSON, check if it's HTML (some shops return HTML for products.json)
             if not products and '<html' in response.text.lower():
                 self.logger.info(f"Shop {shop} returned HTML instead of JSON, trying alternative strategy")
                 yield from self._try_alternative_strategy(shop, strategy, page, offset)
                 return
-                
         except json.JSONDecodeError:
-            # If JSON parsing fails, it might be HTML
             self.logger.info(f"JSON parse failed for {shop}, trying alternative strategy")
             yield from self._try_alternative_strategy(shop, strategy, page, offset)
             return
@@ -193,12 +198,8 @@ class MultiShopSpider(scrapy.Spider):
             yield self._build_next_request(shop, strategy, page, offset, response.url)
             return
 
-        # Track empty pages
         if not products:
             self.consecutive_empty_pages[shop] += 1
-            self.logger.info(f"Empty page {page} for {shop}. Consecutive empty: {self.consecutive_empty_pages[shop]}")
-            
-            # Stop after 3 consecutive empty pages
             if self.consecutive_empty_pages[shop] >= 3:
                 self.logger.info(f"Stopping {shop} after 3 consecutive empty pages")
                 return
@@ -239,19 +240,11 @@ class MultiShopSpider(scrapy.Spider):
                 self.write_shop_item(item_dict, shop)
                 yield {**item_dict}
 
-        # Update seen IDs
         self.seen_ids[shop].update(new_ids)
-        
-        self.logger.info(f"Shop {shop}: Page {page}, Strategy {strategy}, found {len(products)} products, {len(new_ids)} new")
-
-        # Continue to next page
         yield self._build_next_request(shop, strategy, page, offset, response.url, len(products))
 
     def _try_alternative_strategy(self, shop, current_strategy, page, offset):
-        """Try alternative pagination strategies when current one fails"""
         strategies = ['standard', 'offset', 'alternate']
-        
-        # Remove current strategy
         if current_strategy in strategies:
             strategies.remove(current_strategy)
         
@@ -263,22 +256,14 @@ class MultiShopSpider(scrapy.Spider):
             self.logger.warning(f"All pagination strategies failed for {shop}")
 
     def _build_next_request(self, shop, strategy, current_page, current_offset, current_url, products_count=0):
-        """Build the next pagination request based on strategy"""
         if strategy == "standard":
-            next_page = current_page + 1
-            return self._build_initial_request(shop, strategy, next_page, 0)
-        
+            return self._build_initial_request(shop, strategy, current_page + 1, 0)
         elif strategy == "offset":
-            next_offset = current_offset + 250
-            # If we got fewer than 250 products, we might be at the end
             if products_count < 250:
-                self.logger.info(f"Offset strategy: Got only {products_count} products, likely at end for {shop}")
                 return
-            return self._build_initial_request(shop, strategy, 1, next_offset)
-        
-        else:  # alternate strategy
-            next_page = current_page + 1
-            return self._build_initial_request(shop, strategy, next_page, 0)
+            return self._build_initial_request(shop, strategy, 1, current_offset + 250)
+        else:
+            return self._build_initial_request(shop, strategy, current_page + 1, 0)
 
     def _extract_currency_from_page_source_json(self, response):
         text = response.text or ""
@@ -294,19 +279,6 @@ class MultiShopSpider(scrapy.Spider):
             if m:
                 return m.group(1)
         return None
-
-    def parse_currency_page(self, response):
-        shop = response.meta.get('shop')
-        code = self._extract_currency_from_page_source_json(response)
-        if code:
-            self.shop_currency[shop] = code
-        # Yield so Zyte sees it
-            yield {
-                "type": "currency_info",
-                "shop": shop,
-                "currency": code,
-                "detected_at": _now_iso(),
-                                            }
 
     def spider_closed(self, spider):
         summary_path = "crawl_summary.txt"
