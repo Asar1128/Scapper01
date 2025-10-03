@@ -300,6 +300,13 @@ class MultiShopSpider(scrapy.Spider):
         code = self._extract_currency_from_page_source_json(response)
         if code:
             self.shop_currency[shop] = code
+        # Yield so Zyte sees it
+            yield {
+                "type": "currency_info",
+                "shop": shop,
+                "currency": code,
+                "detected_at": _now_iso(),
+                                            }
 
     def spider_closed(self, spider):
         summary_path = "crawl_summary.txt"
