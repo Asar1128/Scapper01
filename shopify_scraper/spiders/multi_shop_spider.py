@@ -146,6 +146,7 @@ class MultiShopSpider(scrapy.Spider):
                 new_ids.add(product_id)
                 variants = prod.get('variants', []) or []
                 name = prod.get('title')
+                desc = prod.get('body_html', '')
 
                 # Extract price
                 price = None
@@ -181,6 +182,7 @@ class MultiShopSpider(scrapy.Spider):
                     "url": product_url,
                     "isFullyOutOfStock": isFullyOutOfStock,
                     "isVariantOutOfStock": isVariantOutOfStock,
+                    "description": desc,
                 }
 
                 # Add full image list only if not empty
