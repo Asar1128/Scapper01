@@ -4,10 +4,12 @@ import os
 import re
 from datetime import datetime, timezone
 
+
 def _safe_shop_filename(shop: str) -> str:
     """Make a filesystem-safe filename from a shop domain."""
     safe = re.sub(r'[^A-Za-z0-9._-]+', '_', shop)
     return f"products_{safe}.jsonl"
+
 
 class MultiShopSpider(scrapy.Spider):
     name = "multi_shop"
@@ -23,7 +25,7 @@ class MultiShopSpider(scrapy.Spider):
 
     def __init__(self, shops_file=None, shops=None, collection=None, tag=None, product_type=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        
+
         # Build shops from args, env, or settings
         self.shops = []
         if shops:
@@ -39,7 +41,7 @@ class MultiShopSpider(scrapy.Spider):
                     self.shops.extend([s.strip() for s in settings_shops.split(',') if s.strip()])
                 elif isinstance(settings_shops, (list, tuple)):
                     self.shops.extend([str(s).strip() for s in settings_shops if str(s).strip()])
-        
+
         if not self.shops:
             raise ValueError("Provide shops=<comma,separated,list> or set SHOPS env/setting")
 
@@ -47,7 +49,7 @@ class MultiShopSpider(scrapy.Spider):
         self.collection = collection.strip() if collection else None
         self.filter_tag = tag.strip().lower() if tag else None
         self.filter_product_type = product_type.strip().lower() if product_type else None
-        
+
         self.shop_stats = {}
         self.seen_ids = {}
         self.pagination_mode = {}
@@ -81,12 +83,12 @@ class MultiShopSpider(scrapy.Spider):
                 url = f"https://{shop}/products.json?limit=250&offset={offset}"
             else:
                 url = f"https://{shop}/products.json?page={page}&limit=250"
-        
+
         return scrapy.Request(
             url,
             callback=self.parse_products_json,
             meta={
-                'shop': shop, 
+                'shop': shop,
                 'page': page,
                 'offset': offset,
                 'strategy': strategy,
@@ -100,20 +102,19 @@ class MultiShopSpider(scrapy.Spider):
         page = response.meta.get('page', 1)
         offset = response.meta.get('offset', 0)
         strategy = response.meta.get('strategy', 'standard')
-        
+
         self.shop_stats.setdefault(shop, {'items': 0, 'saved': 0, 'failed': 0, 'pages_crawled': 0})
-        
+
         if page > self.max_pages_per_shop:
             self.logger.warning(f"Reached max pages for {shop} at page {page}")
             return
-            
+
         self.shop_stats[shop]['pages_crawled'] += 1
 
         if response.status != 200:
             self.logger.warning(f"Got status {response.status} for {response.url}")
             if response.status in [404, 406]:
                 yield from self._try_alternative_strategy(shop, strategy, page, offset)
-                return
             return
 
         try:
@@ -145,20 +146,24 @@ class MultiShopSpider(scrapy.Spider):
                 new_ids.add(product_id)
                 variants = prod.get('variants', []) or []
                 name = prod.get('title')
+
+                # Extract price
                 price = None
                 if variants:
                     first_variant = variants[0] if isinstance(variants[0], dict) else None
                     price = first_variant.get('price') if first_variant else None
 
-                images = prod.get('images', []) or []
+                # Extract main image
+                images = prod.get('images', [])
                 image_url = None
                 if images:
                     first_img = images[0] if isinstance(images[0], dict) else None
-                    image_url = first_img.get('src') if first_img else images[0] if isinstance(images[0], str) else None
+                    image_url = first_img.get('src') if first_img else None
 
                 handle = prod.get('handle')
                 product_url = f"https://{shop}/products/{handle}" if handle else None
-                
+
+                # Stock status
                 isFullyOutOfStock = False
                 isVariantOutOfStock = False
                 if variants:
@@ -167,16 +172,23 @@ class MultiShopSpider(scrapy.Spider):
                     isFullyOutOfStock = all_unavailable
                     isVariantOutOfStock = any_unavailable
 
-                yield {
-                    'shop': shop,
-                    'product_id': product_id,
-                    'name': name,
-                    'price': price,
-                    'image_url': image_url,
-                    'url': product_url,
-                    'isFullyOutOfStock': isFullyOutOfStock,
-                    'isVariantOutOfStock': isVariantOutOfStock,
+                item = {
+                    "shop": shop,
+                    "product_id": product_id,
+                    "name": name,
+                    "price": price,
+                    "image_url": image_url,
+                    "url": product_url,
+                    "isFullyOutOfStock": isFullyOutOfStock,
+                    "isVariantOutOfStock": isVariantOutOfStock,
                 }
+
+                # Add full image list only if not empty
+                # valid_images = [img.get("src") for img in images if isinstance(img, dict) and img.get("src")]
+                # if valid_images:
+                #     item["images"] = valid_images
+
+                yield item
 
         self.seen_ids[shop].update(new_ids)
         yield self._build_next_request(shop, strategy, page, offset, response.url, len(products))
